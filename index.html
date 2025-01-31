@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -48,14 +48,14 @@
     .chat-input button {
       padding: 10px;
       border: none;
-      background-color: #007bff;
+      background-color: #007bff; /* Blue color */
       color: #fff;
       border-radius: 0 5px 5px 0;
       cursor: pointer;
       transition: background-color 0.3s;
     }
     .chat-input button:hover {
-      background-color: #0056b3;
+      background-color: #0056b3; /* Darker blue color */
     }
     .chat-message {
       margin-bottom: 10px;
@@ -93,14 +93,14 @@
     .youtube-link {
       display: inline-block;
       padding: 10px 20px;
-      background-color: #ff0000;
+      background-color: #ff0000; /* Red color */
       color: #fff;
       border-radius: 25px;
       text-decoration: none;
       transition: background-color 0.3s;
     }
     .youtube-link:hover {
-      background-color: #cc0000;
+      background-color: #cc0000; /* Darker red color */
     }
   </style>
 </head>
@@ -158,6 +158,10 @@
         sendMessage();
       }
     }
+
+    // Replace words in the content
+    document.body.innerHTML = document.body.innerHTML.replace(/ChatGPT/g, 'Wonder AI').replace(/4o/g, '8o').replace(/OpenAI/g, 'DG8AB');
   </script>
 </body>
 </html>
+
